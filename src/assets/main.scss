@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,700');
+
+$grey: #292929;
+$yellow: #EBBC43;
+$yellow--hover: #be963a;
+$rounding: 5pt;
+$grey--light: #434343;
+$grey--lighter: #6a6a6a;
+$footer: #eeeeee;
+$footer--lighter: #f7f7f7;
+$red: #F2545B;
+$red--hover: #c14348;
+@mixin rounded {
+  -webkit-border-radius: $rounding;
+  -moz-border-radius: $rounding;
+  border-radius: $rounding;
+}
+
+@mixin transition {
+  transition-duration: 0.5s;
+}
+
+@mixin shadow {
+  // box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 3px 6px rgba(#000000, 0.16);
+}
+
+@mixin shadow--large {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+html, body, #body {
+  height: 100%;
+  display: block;
+  color: $grey;
+  font-family: lato;
+}
+
+#body {
+  display: grid;
+  grid-template-rows: 8vh 92vh;
+
+}
+
+nav {
+
+  display: flex;
+  align-items: center;
+  padding: 0 2%;
+  img {
+    height: 50%;
+    position: relative;
+    margin-bottom: 1%;
+    margin-right: auto;
+  }
+  a {
+    font-weight: 700;
+    color: $grey;
+    margin: 0 2%;
+    @include transition;
+    &:hover {
+      color: $grey--light;
+      text-decoration: underline;
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+#app {
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container {
+  padding: 2%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50vh 20vh;
+ grid-gap: 7%;
+  height: 90vh;
+
+}
+
+.versionBox {
+  width: 100%;
+  height: 100%;
+  @include shadow;
+  @include rounded;
+  padding: 5% 7%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  h1 {
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+  p {
+    text-align: center;
+  }
+  a {
+    @include rounded;
+    @include shadow;
+    @include transition;
+    background: $grey;
+    padding: 2%;
+    text-align: center;
+    color: $yellow;
+    font-weight: 700;
+    font-size: 1.2rem;
+
+    &:hover {
+      background: $grey--light;
+    }
+  }
+
+}
+
+.versionThree {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-column-gap: 15%;
+  padding: 2%;
+  @include shadow;
+  @include rounded;
+  align-items: center;
+  img {
+    height: 7vh;
+  }
+  p {
+    font-weight: 200;
+    font-size: 2.4vw;
+  }
+
+  a {
+    @include rounded;
+    @include shadow;
+    @include transition;
+    background: $yellow;
+    padding: 4%;
+    text-align: center;
+    color: $grey;
+    font-weight: 700;
+    font-size: 1.2rem;
+
+
+    &:hover {
+      background: $yellow--hover;
+      color: $grey;
+    }
+  }
+
+}
