@@ -14,9 +14,8 @@
           <a href="https://v2.legacy.graphitewriter.com">Launch</a>
         </div>
         <div class="versionBox">
-          <h1>Graphite Writer v2 (BETA)</h1>
-          <p>Graphite Writer v2 was designed to allow for realtime sharing between Graphite Writer users. It was
-            discontinued when we realized that our users cared more about speed and note taking than realtime sharing.</p>
+          <h1>Graphite Writer v1</h1>
+          <p>Graphite Writer v1 was designed to be the fastest online text editor around. We stopped working on Graphite Version one when we started v2.</p>
           <a href="https://v1.legacy.graphitewriter.com">Launch</a>
         </div>
         <div class="versionThree">
