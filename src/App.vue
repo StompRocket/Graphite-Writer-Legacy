@@ -1,7 +1,7 @@
 <template>
   <div id="body">
     <nav>
-      <img src="@/assets/graphiteWriter.svg" alt="Graphite Writer">
+      <img src="assets/graphiteWriter.svg" alt="Graphite Writer">
       <a href="https://beta.graphitewriter.com/#pricing">Pricing</a>
       <a href="https://beta.graphitewriter.com/#about">About</a>
     </nav>
@@ -21,7 +21,7 @@
         </div>
         <div class="versionThree">
           <div>
-            <img src="@/assets/graphiteWriter.svg" alt="Graphite Writer">
+            <img src="assets/graphiteWriter.svg" alt="Graphite Writer">
             <p>Faster Note Taking For Students</p>
           </div>
 
